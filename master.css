@@ -1,0 +1,762 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   Variables
+=========================== */
+
+:root{
+
+    --bg-color:#081b29;
+    --second-bg:#112e42;
+    --text-color:#ffffff;
+    --main-color:#00abf0;
+
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+    background:var(--bg-color);
+    color:var(--text-color);
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   General
+=========================== */
+
+section{
+
+    min-height:100vh;
+    padding:100px 10%;
+
+}
+
+.title{
+
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+    color:var(--main-color);
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    max-width:100%;
+
+}
+/* ===========================
+   Header
+=========================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    padding:20px 10%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:rgba(8,27,41,.8);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+}
+
+.logo a{
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    font-size:18px;
+
+    transition:.4s;
+
+}
+
+nav a:hover{
+
+    color:var(--main-color);
+
+}
+
+.menu{
+
+    display:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+/* ===========================
+   Home
+=========================== */
+
+.home{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.home-text{
+
+    flex:1;
+
+}
+
+.home-text h3{
+
+    font-size:28px;
+
+}
+
+.home-text h1{
+
+    font-size:65px;
+
+    margin:10px 0;
+
+}
+
+.home-text h2{
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.home-text span{
+
+    color:var(--main-color);
+
+}
+
+.home-text p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#d9d9d9;
+}
+/* ===========================
+   Home Image
+=========================== */
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+
+    width:380px;
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid var(--main-color);
+
+    box-shadow:
+    0 0 20px var(--main-color),
+    0 0 40px var(--main-color);
+
+    transition:.5s;
+
+}
+
+.home-image img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 30px var(--main-color),
+    0 0 60px var(--main-color);
+
+}
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    background:var(--main-color);
+
+    color:white;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:white;
+
+    color:var(--bg-color);
+
+    transform:translateY(-5px);
+
+}
+/* ===========================
+   Social Icons
+=========================== */
+
+.social-icons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.social-icons a{
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px solid var(--main-color);
+
+    border-radius:50%;
+
+    color:var(--main-color);
+
+    font-size:22px;
+
+    transition:.4s;
+
+}
+
+.social-icons a:hover{
+
+    background:var(--main-color);
+
+    color:white;
+
+    transform:translateY(-8px);
+
+}
+/* ===========================
+   About
+=========================== */
+
+.about{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:70px;
+
+    background:var(--second-bg);
+
+}
+
+.about-image img{
+
+    width:340px;
+
+    border-radius:20px;
+
+    border:4px solid var(--main-color);
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h2{
+
+    font-size:45px;
+
+    color:var(--main-color);
+
+    margin-bottom:20px;
+
+}
+
+.about-text h3{
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.about-text p{
+
+    line-height:1.9;
+
+    color:#ddd;
+
+}
+/* ===========================
+   Skills
+=========================== */
+
+.skills-container{
+    max-width:800px;
+    margin:auto;
+}
+
+.skill{
+    margin-bottom:30px;
+}
+
+.skill h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.progress{
+    width:100%;
+    height:15px;
+    background:#1c425c;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progress span{
+    display:block;
+    height:100%;
+    background:var(--main-color);
+    border-radius:30px;
+    box-shadow:0 0 10px var(--main-color);
+}
+/* ===========================
+   Projects
+=========================== */
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:var(--second-bg);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:2px solid transparent;
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:var(--main-color);
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#ddd;
+
+    line-height:1.7;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--main-color);
+
+    box-shadow:0 0 20px rgba(0,171,240,.5);
+
+}
+/* ===========================
+   Journey
+=========================== */
+
+.journey-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+.journey-box{
+
+    background:var(--second-bg);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.journey-box i{
+
+    font-size:40px;
+
+    color:var(--main-color);
+
+    margin-bottom:20px;
+
+}
+
+.journey-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px rgba(0,171,240,.5);
+
+}
+/* ===========================
+   Contact
+=========================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.contact-card{
+
+    background:var(--second-bg);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.contact-card i{
+
+    font-size:40px;
+
+    color:var(--main-color);
+
+    margin-bottom:20px;
+
+}
+
+.contact-card a{
+
+    color:white;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    transition:.4s;
+
+}
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    background:#05131d;
+
+    text-align:center;
+
+    padding:50px 10%;
+
+}
+
+.footer-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:30px 0;
+
+}
+
+.footer-icons a{
+
+    color:var(--main-color);
+
+    font-size:25px;
+
+    transition:.4s;
+
+}
+
+.footer-icons a:hover{
+
+    color:white;
+
+    transform:scale(1.3);
+
+}
+
+.copyright{
+
+    color:#bbb;
+
+}
+/* ===========================
+   Scroll Animation
+=========================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all 1s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #67688b;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    transform: translateY(-5px);
+}
+#menuBtn{
+    display:none;
+    font-size:30px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+
+#navLinks{
+    display:flex;
+    gap:20px;
+}
+
+
+@media(max-width:768px){
+
+    #menuBtn{
+        display:block;
+    }
+
+
+    #navLinks{
+
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:0;
+        width:100%;
+        text-align:center;
+
+    }
+
+
+    #navLinks.active{
+
+        display:flex;
+
+    }
+
+}
+/* ===========================
+   Hover Effects
+=========================== */
+
+/* Buttons */
+button,
+.btn {
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00aaff;
+}
+
+
+/* Project Cards */
+.project-card {
+    transition: 0.3s;
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0,170,255,0.4);
+}
+
+
+/* Learning Cards */
+.learning-card {
+    transition: 0.3s;
+}
+
+
+.learning-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0,170,255,0.4);
+}
+
+
+/* Contact Cards */
+.contact-card {
+    transition: 0.3s;
+}
+
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0,170,255,0.4);
+}
