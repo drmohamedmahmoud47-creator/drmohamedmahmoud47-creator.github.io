@@ -27,8 +27,10 @@
     --text-color:#ffffff;
     --main-color:#00abf0;
 
-}
+    --card-color:#16384f;
+    --shadow-color:rgba(0,0,0,.3);
 
+}
 /* ===========================
    Body
 =========================== */
@@ -41,6 +43,17 @@ body{
 
 }
 
+body.light-mode{
+
+    --bg-color:#f8f9fa;
+    --second-bg:#ffffff;
+    --text-color:#1a1a1a;
+    --main-color:#0077ff;
+
+    --card-color:#ffffff;
+    --shadow-color:rgba(0,0,0,.1);
+
+}
 /* ===========================
    General
 =========================== */
@@ -183,9 +196,9 @@ nav a:hover{
 
 .home-text h2{
 
-    font-size:35px;
-
+    font-size:28px;
     margin-bottom:20px;
+    white-space: nowrap;
 
 }
 
@@ -201,7 +214,7 @@ nav a:hover{
 
     line-height:1.8;
 
-    color:#d9d9d9;
+    color:var(--#d9d9d9);
 }
 /* ===========================
    Home Image
@@ -385,7 +398,7 @@ nav a:hover{
 
     line-height:1.9;
 
-    color:#ddd;
+    color: var(--#ddd);
 
 }
 /* ===========================
@@ -469,7 +482,7 @@ nav a:hover{
 
 .card p{
 
-    color:#ddd;
+    color:var(--#ddd);
 
     line-height:1.7;
 
@@ -567,7 +580,7 @@ nav a:hover{
 
 .contact-card a{
 
-    color:white;
+    color:var(white);
 
 }
 
@@ -583,14 +596,12 @@ nav a:hover{
 =========================== */
 
 footer{
-
-    background:#05131d;
-
+    background: var(--second-bg);
     text-align:center;
-
     padding:50px 10%;
-
 }
+
+
 
 .footer-icons{
 
@@ -624,7 +635,7 @@ footer{
 
 .copyright{
 
-    color:#bbb;
+    color:var(#bbb);
 
 }
 /* ===========================
@@ -759,4 +770,31 @@ button:hover,
 .contact-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(0,170,255,0.4);
+}
+#typing::after{
+    content: "|";
+    display: inline-block;
+    margin-left: 3px;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+#theme-toggle{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:var(--main-color);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    transform:scale(1.1);
 }

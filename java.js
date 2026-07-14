@@ -1,54 +1,18 @@
-const text = [
-    "Front-End Developer",
-    "HTML Developer",
-    "CSS Learner",
-    "Future JavaScript Developer"
-];
+const text = "Front-End Developer";
 
-let index = 0;
 let charIndex = 0;
 
 const typing = document.getElementById("typing");
 
 function type() {
 
-    if (charIndex < text[index].length) {
+    if (charIndex < text.length) {
 
-        typing.textContent += text[index].charAt(charIndex);
+        typing.textContent += text.charAt(charIndex);
 
         charIndex++;
 
         setTimeout(type, 100);
-
-    } else {
-
-        setTimeout(erase, 1500);
-
-    }
-
-}
-
-function erase() {
-
-    if (charIndex > 0) {
-
-        typing.textContent = text[index].substring(0, charIndex - 1);
-
-        charIndex--;
-
-        setTimeout(erase, 50);
-
-    } else {
-
-        index++;
-
-        if (index >= text.length) {
-
-            index = 0;
-
-        }
-
-        setTimeout(type, 300);
 
     }
 
@@ -138,4 +102,29 @@ if(menuBtn){
     });
 
 }
+// ===========================
+// Dark / Light Mode
+// ===========================
 
+const themeBtn = document.getElementById("theme-toggle");
+
+// استرجاع آخر اختيار
+
+
+themeBtn.addEventListener("click", function () {
+
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+
+        themeBtn.textContent = "☀️";
+        localStorage.setItem("theme", "light");
+
+    } else {
+
+        themeBtn.textContent = "🌙";
+        localStorage.setItem("theme", "dark");
+
+    }
+
+});
