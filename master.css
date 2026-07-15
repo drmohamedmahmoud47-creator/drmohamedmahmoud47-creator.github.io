@@ -695,13 +695,13 @@ footer{
 
 @media(max-width:768px){
 
+    
+
     #menuBtn{
         display:block;
     }
 
-
     #navLinks{
-
         display:none;
         flex-direction:column;
         position:absolute;
@@ -709,17 +709,70 @@ footer{
         right:0;
         width:100%;
         text-align:center;
-
     }
-
 
     #navLinks.active{
-
         display:flex;
-
     }
 
+    .home{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .home-image img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .home-text h1{
+        font-size: 45px;
+    }
+
+    .home-text h2{
+        font-size: 22px;
+        white-space: normal;
+    }
+
+    .home-text h3{
+        font-size: 22px;
+    }
+
+    .home-text p{
+        font-size: 16px;
+    }
+
+    .buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+.about{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
 }
+
+.about-image img{
+    width: 220px;
+}
+
+.about-text h2{
+    font-size: 36px;
+}
+
+.about-text h3{
+    font-size: 22px;
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.8;
+}
+}
+
+
 /* ===========================
    Hover Effects
 =========================== */
