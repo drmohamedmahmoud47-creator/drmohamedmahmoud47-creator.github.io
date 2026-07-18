@@ -220,40 +220,7 @@ nav a:hover{
    Home Image
 =========================== */
 
-.home-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
 
-.home-image img{
-
-    width:380px;
-    height:380px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:6px solid var(--main-color);
-
-    box-shadow:
-    0 0 20px var(--main-color),
-    0 0 40px var(--main-color);
-
-    transition:.5s;
-
-}
-
-.home-image img:hover{
-
-    transform:scale(1.05);
-
-    box-shadow:
-    0 0 30px var(--main-color),
-    0 0 60px var(--main-color);
-
-}
 /* ===========================
    Buttons
 =========================== */

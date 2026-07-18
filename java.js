@@ -1,4 +1,4 @@
-const text = "Front-End Developer";
+const text = "Modern Web Experiences";
 
 let charIndex = 0;
 
